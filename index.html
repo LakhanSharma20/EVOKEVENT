@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> EVOK EVENTS Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+<nav>
+    <img src="images/logo 3.png" class="nav-logo">
+    <a href="#booking"><button class="book-btn">E</button></a>
+    <a href="index.html" class="page">Home</a>
+    <a href="dj.html" class="page">DJ & Music</a>
+    <a href="faq.html" class="page">FAQs</a>
+    <div class="profile-menu">
+        <img src="images/profile.png" class="profile-icon" onclick="toggleMenu()">
+
+        <div id="dropdown" class="dropdown">
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+</nav>
+
+</nav>
+    </header>
+<img style="width: 40%;" src="images/logo.png" class="logo">
+<script>
+  var video = document.getElementById("myVideo");
+  video.onmouseover = function () {
+    video.play();
+  }
+  video.onmouseout = function () {
+    video.pause();
+  }
+</script>
+</div>
+
+<h2 style="text-align:center;">Book Your Event</h2>
+
+<form id="booking">
+    <label>Full Name</label>
+    <input type="text" required>
+
+    <label>Email</label>
+    <input type="email" required>
+
+    <label>Phone Number</label>
+    <input type="text" required>
+
+    <label>Project Date</label>
+    <input type="date" required>
+
+    <label>Location</label>
+    <input type="text" required>
+
+    <label>Type of Event</label>
+    <select required>
+        <option>Wedding</option>
+        <option>School / College Party</option>
+        <option>Birthday Party</option>
+        <option>Private Party</option>
+        <option>Other</option>
+    </select>
+
+    <label>Description</label>
+    <textarea rows="5"></textarea>
+
+    <button type="button" onclick="bookEvent()">Book</button>
+</form>
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p><b>Phone:</b> 7668921998</p>
+            <p><b>Email:</b> sharmalakhan.0546@gmail.com</p>
+            <p><b>Address:</b> Utter Pradesh, Mathura</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a><br>
+            <a href="dj.html">DJ & Music</a><br>
+            <a href="faq.html">FAQs</a><br>
+            <a href="index.html#booking">Book Event</a>
+        </div>
+
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <p>Instagram | Facebook | YouTube</p>
+        </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 EVOK EVENTS. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
