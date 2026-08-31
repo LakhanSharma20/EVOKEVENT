@@ -157,7 +157,7 @@ button:hover {
     background: #0d47c3;
 }
 .logo {
-    width: 200px;
+    width: 250px;
     display: block;
     margin: 20px auto;
 }
@@ -197,6 +197,7 @@ footer h3 {
 }
 
 .footer-bottom {
+    color: blue;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #1cb5e0;
