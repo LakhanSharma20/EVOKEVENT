@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> EVOK EVENTS Home</title>
+    <title>FAQs – EVOK EVENTS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+
 <nav>
-    <img src="logo.png" class="nav-logo">
-    <a href="#booking"><button class="book-btn">E</button></a>
-    <a href="index.html" class="page">Home</a>
-    <a href="dj.html" class="page">DJ & Music</a>
-    <a href="faq.html" class="page">FAQs</a>
+    <img src="logo.png" class="nav-logo" alt="EE">
+
+    <a href="index.html">Home</a>
+    <a href="dj.html">DJ & Music</a>
+    <a href="faq.html">FAQs</a>
+
     <div class="profile-menu">
-        <img src="images/profile.png" class="profile-icon" onclick="toggleMenu()" alt="Profile">
+        <img src="images/profile.png"
+             class="profile-icon"
+             onclick="toggleMenu()"
+             alt="Profile">
 
         <div id="dropdown" class="dropdown">
             <a href="login.html">Login</a>
@@ -22,53 +26,52 @@
     </div>
 </nav>
 
-</nav>
-    </header>
-<img style="width: 40%;" src="logo.png" class="logo" alt="EE">
-<script>
-  var video = document.getElementById("myVideo");
-  video.onmouseover = function () {
-    video.play();
-  }
-  video.onmouseout = function () {
-    video.pause();
-  }
-</script>
+<h2>Services</h2>
+
+<div class="grid">
+    <img src="wedding.jpg" alt="Wedding">
+    <img src="School.jpg" alt="School">
+    <img src="Birthday.jpg" alt="Birthday">
+
+    <video id="MyVideo" width="50%" height="300" controls>
+        <source src="private party.mp4" type="video/mp4">
+    </video>
 </div>
 
-<h2 style="text-align:center;">Book Your Event</h2>
+<h2>Frequently Asked Questions</h2>
 
-<form id="booking">
-    <label>Full Name</label>
-    <input type="text" required>
+<div class="faq-container">
 
-    <label>Email</label>
-    <input type="email" required>
+    <p>
+        <b>1. How early should I book an event?</b><br>
+        We recommend booking at least 2 weeks before the event.
+    </p>
 
-    <label>Phone Number</label>
-    <input type="text" required>
+    <p>
+        <b>2. Do you provide decorations?</b><br>
+        Yes, decoration services are available for all events.
+    </p>
 
-    <label>Project Date</label>
-    <input type="date" required>
+    <p>
+        <b>3. Do you handle music & DJ?</b><br>
+        Yes, we provide full DJ setups, lighting & sound.
+    </p>
 
-    <label>Location</label>
-    <input type="text" required>
+    <p>
+        <b>4. Can I customize my event?</b><br>
+        Yes! We plan events exactly how you want.
+    </p>
 
-    <label>Type of Event</label>
-    <select required>
-        <option>Wedding</option>
-        <option>School / College Party</option>
-        <option>Birthday Party</option>
-        <option>Private Party</option>
-        <option>Other</option>
-    </select>
+</div>
 
-    <label>Description</label>
-    <textarea rows="5"></textarea>
+<div>
+    <form id="review">
+        <input type="text">
+    </form>
+</div>
 
-    <button type="button" onclick="bookEvent()">Book</button>
-</form>
 <footer>
+
     <div class="footer-container">
 
         <div class="footer-section">
@@ -95,8 +98,13 @@
 
     </div>
 
-    <p class="footer-bottom">© 2026 EVOK EVENTS. All rights reserved.</p>
+    <p class="footer-bottom">
+        © 2026 EVOK EVENTS. All rights reserved.
+    </p>
+
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
