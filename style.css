@@ -1,18 +1,17 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: white;
     background-size: cover;
     padding-top: 70px;
+    color: #0a2342;
 }
+
 body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.5);
-    z-index: -1;
+    content: none;
 }
 nav {
-    background: rgba(10, 35, 66, 0.9);
+    background: #0a2342;
     padding: 15px;
     text-align: center;
     position: fixed;
@@ -21,20 +20,22 @@ nav {
     z-index: 999;
     backdrop-filter: blur(5px);
 }
+
 .page {
     text-align: left;
     left: 25px;
-    
 }
+
 .nav-logo {
-     width: 35px;
+    width: 35px;
     height: 35px;
     border-radius: 50%;
     cursor: pointer;
-    position :absolute;
+    position: absolute;
     left: 20px;
     top: 11px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -46,6 +47,8 @@ nav a {
 nav a:hover {
     color: #1cb5e0;
 }
+
+/* PROFILE */
 .profile-menu {
     position: absolute;
     right: 35px;
@@ -63,7 +66,7 @@ nav a:hover {
     display: none;
     position: absolute;
     right: 0;
-    background: #222;
+    background: #0a2342;
     padding: 10px;
     border-radius: 8px;
     margin-top: 10px;
@@ -77,14 +80,14 @@ nav a:hover {
 }
 
 .dropdown a:hover {
-    background: #444;
+    background: #1cb5e0;
 }
 .book-btn {
     width: 50px;
     height: 40px;
-    background: black;
-    color: plum;
-    border: 2px solid #c9c9c9;
+    background: #0a2342;
+    color: white;
+    border: 2px solid #1cb5e0;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 600;
@@ -97,8 +100,9 @@ nav a:hover {
 .book-btn:active {
     transform: translateY(2px);
 }
+
 h2 {
-    color: white;
+    color: #0a2342;
     text-align: center;
     font-size: 250%;
 }
@@ -109,44 +113,49 @@ h2 {
     padding: 20px;
 }
 
-.grid img, .grid video {
+.grid img,
+.grid video {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 .dj img {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 20px;
 }
+
 form {
     width: 90%;
     max-width: 600px;
     margin: 25px auto;
     padding: 20px;
-    background: rgba(255,255,255,0.1);
-    backdrop-filter: blur(10px);
+    background: #eaf4ff;
+    border: 1px solid #1cb5e0;
     border-radius: 10px;
-    color: white;
+    color: #0a2342;
 }
-form input, 
-form textarea, 
+
+form input,
+form textarea,
 form select {
     width: 96%;
     padding: 10px;
     margin: 10px 0 20px 0;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    background: rgba(0,0,0,0.5);
-    color: white;
+    border: 1px solid #1cb5e0;
+    background: white;
+    color: #0a2342;
 }
+
 button {
     width: 100%;
     padding: 12px;
-    background: black;
-    color: plum;
+    background: #0a2342;
+    color: white;
     border: none;
     font-size: 18px;
     border-radius: 10px;
@@ -156,10 +165,47 @@ button {
 button:hover {
     background: #0d47c3;
 }
+
 .logo {
     width: 250px;
     display: block;
     margin: 20px auto;
+}
+
+.faq-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 18px;
+    background: #eaf4ff;
+    border: 1px solid #1cb5e0;
+    border-radius: 10px;
+    color: #0a2342;
+}
+
+.faq-container p {
+    margin: 15px 0;
+}
+
+.faq-container b {
+    color: #0d47c3;
+}
+.review-container {
+    width: 90%;
+    margin: 25px auto;
+}
+
+#review {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+}
+
+#review input {
+    width: 96%;
 }
 footer {
     background: #0a2342;
@@ -197,10 +243,12 @@ footer h3 {
 }
 
 .footer-bottom {
-    color: blue;
+    color: white;
     text-align: center;
     padding-top: 20px;
     border-top: 1px solid #1cb5e0;
     margin-top: 20px;
     font-size: 14px;
 }
+
+
