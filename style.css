@@ -47,8 +47,6 @@ nav a {
 nav a:hover {
     color: #1cb5e0;
 }
-
-/* PROFILE */
 .profile-menu {
     position: absolute;
     right: 35px;
@@ -112,7 +110,11 @@ h2 {
     gap: 15px;
     padding: 20px;
 }
-
+.review{
+    width:100px;
+    height:50px;
+    
+}
 .grid img,
 .grid video {
     width: 100%;
